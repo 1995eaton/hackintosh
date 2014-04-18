@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SMbiosdate</key>
+	<string>05/10/12</string>
+	<key>SMbiosvendor</key>
+	<string>Apple Inc.</string>
+	<key>SMbiosversion</key>
+	<string>MBP101.88Z.00EE.B00.1205101839</string>
+	<key>SMboardproduct</key>
+	<string>Mac-C3EC7CD22292981F</string>
+	<key>SMexternalclock</key>
+	<string>2.4GHz</string>
+	<key>SMfamily</key>
+	<string>MacBook Pro</string>
+	<key>SMmanufacturer</key>
+	<string>Apple Inc.</string>
+	<key>SMmaximalclock</key>
+	<string>3.4GHz</string>
+	<key>SMmemmanufacturer_1</key>
+	<string>Kingston</string>
+	<key>SMmemspeed</key>
+	<string>1600MHz</string>
+	<key>SMmemtype</key>
+	<string>24</string>
+	<key>SMproductname</key>
+	<string>HackBook Pro</string>
+	<key>SMserial</key>
+	<string>C02LQK1MDKQ1</string>
+	<key>SMsystemversion</key>
+	<string>1.0</string>
+</dict>
+</plist>
