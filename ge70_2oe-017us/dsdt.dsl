@@ -71,7 +71,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 2, "MSI_NB", "MEGABOOK", 0x00000028)
     External (_SB_.PCI0.PEG0.PEGP)
     External (_SB_.PCI0.PEG0.PEGP.SGPO, MethodObj)    // Warning: Unresolved Method, guessing 5 arguments (may be incorrect, see warning above)
     External (_SB_.PCI0.PEG0.PEGP.SGOF, MethodObj)    // Warning: unresolved Method, assuming 0 arguments (may be incorrect, see warning above)
-		External (_SB_.PCI0.PEG0.PEGP.SGON, MethodOBj)
+	 External (_SB_.PCI0.PEG0.PEGP.SGON, MethodObj)
     External (_SB_.PCI0.PEG0.PEGP.TGPC, BuffObj)
     External (_SB_.PCI0.PEG1)
     External (_SB_.PCI0.PEG1.HPME, MethodObj)    // Warning: Unresolved Method, guessing 0 arguments (may be incorrect, see warning above)
@@ -9428,8 +9428,8 @@ DefinitionBlock ("dsdt.aml", "DSDT", 2, "MSI_NB", "MEGABOOK", 0x00000028)
 
     Method (_WAK, 1, Serialized)  // _WAK: Wake
     {
-				PINI ()
-        \_SB.PCI0.PEG0.PEGP.SGOF ()
+		  \_SB.PCI0.PEG0.PEGP.SGPO ()
+		  \_SB.PCI0.PEG0.PEGP.SGOF ()
         P8XH (One, 0xAB)
         \_SB.PCI0.GFX0.GLID (One, ShiftLeft (Arg0, 0x04, DBG8), WAK (Arg0))
 				ADBG ("_WAK")
@@ -15411,7 +15411,6 @@ DefinitionBlock ("dsdt.aml", "DSDT", 2, "MSI_NB", "MEGABOOK", 0x00000028)
         \_SB.PCI0.LPCB.SWAK (Arg0)
         \_SB.PCI0.NWAK (Arg0)
         \_SB.PCI0.LPCB.SIOW (Arg0)
-        \_SB.PCI0.PEG0.PEGP.SGOF ()
     }
 
     Method (OSCM, 4, NotSerialized)
@@ -15421,7 +15420,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 2, "MSI_NB", "MEGABOOK", 0x00000028)
 
     Method (PINI, 0, NotSerialized)
     {
-			\_SB.PCI0.PEG0.PEGP.SGOF ()
+		  \_SB.PCI0.PEG0.PEGP.SGOF ()
     }
 }
 

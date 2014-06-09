@@ -3,42 +3,42 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>13B42</string>
+	<string>13C1021</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>ApplePS2ElanTouchpad</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.iokit.ApplePS2ElanTouchpad</string>
+	<string>org.emlydinesh.driver.ApplePS2ElanTouchpad</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>ApplePS2ElanTouchpad</string>
+	<string>ELAN PS/2 Smart-Pad</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.0.2</string>
+	<string>3.8</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>3.0.2</string>
+	<string>3.8</string>
 	<key>DTCompiler</key>
-	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<string></string>
 	<key>DTPlatformBuild</key>
-	<string>5A3005</string>
+	<string>4H1503</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>12F37</string>
+	<string>11E52</string>
 	<key>DTSDKName</key>
-	<string>macosx10.8</string>
+	<string>macosx10.7</string>
 	<key>DTXcode</key>
-	<string>0502</string>
+	<string>0463</string>
 	<key>DTXcodeBuild</key>
-	<string>5A3005</string>
+	<string>4H1503</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>Elan Touchpad</key>
+		<key>ELAN Smart-Pad</key>
 		<dict>
 			<key>AccelerationPreferences</key>
 			<dict>
@@ -508,19 +508,27 @@
 				</array>
 			</dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.apple.iokit.ApplePS2ElanTouchpad</string>
+			<string>org.emlydinesh.driver.ApplePS2ElanTouchpad</string>
+			<key>Debug Level</key>
+			<integer>0</integer>
 			<key>EAPD Preferences</key>
 			<dict>
-				<key>Audio Sense</key>
-				<true/>
-				<key>Codec Address</key>
+				<key>CodecAddress</key>
 				<integer>0</integer>
-				<key>Enable EAPD Fix</key>
-				<false/>
+				<key>ExternalMic</key>
+				<integer>24</integer>
 				<key>Headphones</key>
-				<integer>0</integer>
-				<key>Speaker</key>
+				<integer>33</integer>
+				<key>HpHasEAPD</key>
+				<false/>
+				<key>JackSenseFix</key>
+				<true/>
+				<key>SendDelay</key>
+				<integer>1500</integer>
+				<key>Speakers</key>
 				<integer>20</integer>
+				<key>SpkHasEAPD</key>
+				<false/>
 			</dict>
 			<key>HIDAccelCurves</key>
 			<array>
@@ -865,41 +873,21 @@
 			<key>IOProviderClass</key>
 			<string>ApplePS2MouseDevice</string>
 			<key>Manufacturer</key>
-			<string>ElanTech</string>
+			<string>ELAN</string>
 			<key>Preferences</key>
 			<dict>
-				<key>2FingersPressAction</key>
-				<integer>0</integer>
-				<key>3FingerSwipeDownAction</key>
-				<integer>0</integer>
-				<key>3FingerSwipeLeftAction</key>
-				<integer>0</integer>
-				<key>3FingerSwipeRightAction</key>
-				<integer>0</integer>
-				<key>3FingerSwipeUpAction</key>
-				<integer>0</integer>
 				<key>3FingerSwipes</key>
 				<false/>
-				<key>3FingersPressAction</key>
-				<integer>0</integer>
-				<key>4FingerSwipeDownAction</key>
-				<integer>0</integer>
-				<key>4FingerSwipeLeftAction</key>
-				<integer>0</integer>
-				<key>4FingerSwipeRightAction</key>
-				<integer>0</integer>
-				<key>4FingerSwipeUpAction</key>
-				<integer>0</integer>
 				<key>4FingerSwipes</key>
 				<false/>
-				<key>4FingerTapAction</key>
-				<integer>0</integer>
-				<key>4FingersPressAction</key>
-				<integer>0</integer>
 				<key>AccelerationPrefValue</key>
 				<integer>0</integer>
 				<key>AccidentalInputTimeOut</key>
-				<integer>200</integer>
+				<integer>1000</integer>
+				<key>Auto2FingScroll</key>
+				<false/>
+				<key>AutoEdgeScroll</key>
+				<false/>
 				<key>CircularEdgeScroll</key>
 				<false/>
 				<key>CircularRotate</key>
@@ -925,34 +913,50 @@
 				<key>EdgeSwipeTop</key>
 				<integer>0</integer>
 				<key>FingLiftDragRelTimeOut</key>
-				<integer>0</integer>
-				<key>FourFingersPress</key>
+				<integer>300</integer>
+				<key>IdleAsusKBlightAutoOff</key>
 				<false/>
+				<key>IdleAsusKBlightTimeOut</key>
+				<integer>10000</integer>
 				<key>Inertial2FingScroll</key>
 				<true/>
 				<key>InertialEdgeScroll</key>
 				<false/>
-				<key>KeyBoardNumLockOn</key>
-				<false/>
-				<key>LinearScrolling</key>
-				<false/>
-				<key>MousePointerDPI</key>
-				<integer>1600</integer>
+				<key>InertialScrollLevel</key>
+				<integer>2</integer>
 				<key>MulFingDoubleTaps</key>
 				<false/>
 				<key>PinchZoom</key>
 				<false/>
+				<key>PointerAccelCustomValue</key>
+				<integer>12</integer>
+				<key>PointerAccelerationMode</key>
+				<integer>1</integer>
+				<key>PointerResolution</key>
+				<integer>1600</integer>
 				<key>Rotation</key>
 				<false/>
-				<key>ScrollRubberEffect</key>
-				<false/>
-				<key>TapHoldDragStartTimeOut</key>
+				<key>ScrollAccelerationMode</key>
 				<integer>0</integer>
-				<key>ThreeFingersPress</key>
+				<key>Sling2FingScroll</key>
 				<false/>
+				<key>SlingEdgeScroll</key>
+				<false/>
+				<key>SlingEffectHoldTimeOut</key>
+				<integer>500</integer>
+				<key>SlowScrollFilterValue</key>
+				<integer>5</integer>
+				<key>TapHoldDragPressure</key>
+				<integer>0</integer>
+				<key>TapHoldDragStartTimeOut</key>
+				<integer>1200</integer>
 				<key>TrackpadTappingCorners</key>
 				<false/>
-				<key>TwoFingersPress</key>
+				<key>v3HWLegacyMode</key>
+				<false/>
+				<key>v4HW3ButtonsSimulated</key>
+				<true/>
+				<key>v4HWHasPhysicalButtons</key>
 				<false/>
 			</dict>
 			<key>ProductID</key>
@@ -966,19 +970,21 @@
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © EMlyDinEsH(OSXLatitude) 2012-2013. All rights reserved.</string>
+	<string>Copyright © EMlyDinEsH(OSXLatitude) 2012-2014. All rights reserved.</string>
 	<key>OSBundleLibraries</key>
 	<dict>
-		<key>com.apple.iokit.ApplePS2Controller</key>
-		<string>3.0</string>
-		<key>com.apple.iokit.IOHIDFamily</key>
-		<string>1.0b1</string>
+		<key>com.apple.iokit.IOHIDSystem</key>
+		<string>1.0.0b1</string>
 		<key>com.apple.kpi.iokit</key>
-		<string>7.0</string>
+		<string>9.0.0</string>
 		<key>com.apple.kpi.libkern</key>
-		<string>8.0d0</string>
+		<string>9.0.0</string>
 		<key>com.apple.kpi.mach</key>
-		<string>8.0d0</string>
+		<string>9.0.0</string>
+		<key>org.emlydinesh.driver.ApplePS2Controller</key>
+		<string>3.8</string>
+		<key>org.emlydinesh.driver.ApplePS2Keyboard</key>
+		<string>3.8</string>
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Safe Boot</string>
